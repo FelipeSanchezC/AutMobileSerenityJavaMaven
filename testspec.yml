@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  install:
+    commands:
+      - echo "Nothing to do in the install phase..."
+
+  test:
+    commands:
+      - echo "Running tests..."
+      - ls -la
+      - java -cp "/test-classes:/dependency/*" org.junit.runner.JUnitCore com.tuempresa.TuClaseDePrueba
